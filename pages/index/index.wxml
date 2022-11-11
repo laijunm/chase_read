@@ -1,0 +1,211 @@
+<view class="book-city">
+  <view class="head-bar">
+    <text class="title">精选</text>
+    <text class="title">悬疑</text>
+    <text class="title">都市</text>
+    <text class="title">玄幻</text>
+    <view class="right-icon">
+      <image class="icon" src="../images/search_img_black.png" alt="" srcset="" />
+    </view>
+  </view>
+  <view class="swiper">
+    <swiper class="swiper-box" autoplay>
+      <swiper-item class="swiper-item">
+        <image class="swiper-img" src="../images/type_dushi.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="swiper-img" src="../images/type_lingyi.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="swiper-img" src="../images/type_qita.png"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="book-city-classify-main">
+    <view class="classify-and-recommend">
+      <view class="book-city-classify">
+        <view class="classify-item">
+          <image class="classify-item-img" src="../images/icon_classify.png"></image>
+        </view>
+        <view class="classify-item">
+          <image class="classify-item-img" src="../images/icon_rank.png"></image>
+        </view>
+        <view class="classify-item">
+          <image class="classify-item-img" src="../images/icon_free.png"></image>
+        </view>
+        <view class="classify-item">
+          <image class="classify-item-img" src="../images/icon_end.png"></image>
+        </view>
+        <view class="classify-item">
+          <image class="classify-item-img" src="../images/icon_new.png"></image>
+        </view>
+      </view>
+      <!-- 主打推荐 -->
+      <view class="leading-recommend">
+        <view class="recommend-title">主打推荐</view>
+        <view class="recommend-box">
+          <view class="recommend-left">
+            <image class="recommend-left-img" src=""></image>
+            <view class="recommend-book-name">惊悚14号公寓</view>
+            <view class="recommend-book-introduce">升职当保安队长</view>
+          </view>
+          <view class="recommend-right">
+            <view class="recommend-right-book">
+              <image class="recommend-right-img" src=""></image>
+              <view class="recommend-book-name">惊悚14号公寓</view>
+              <view class="recommend-book-introduce">升职当保安队长</view>
+            </view>
+            <view class="recommend-right-book">
+              <image class="recommend-right-img" src=""></image>
+              <view class="recommend-book-name">惊悚14号公寓</view>
+              <view class="recommend-book-introduce">升职当保安队长</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 本期热销 -->
+    <view class="current-eriod-sell-well">
+      <view class="recommend-title">本期热销 <image class="current-icon" src="../images/title_more.png"></image>
+      </view>
+      <view class="sell-well-books">
+        <view class="sell-well-book">
+          <image class="sell-well-book-img" src="../images/type_dushi.png"></image>
+          <view class="sell-well-book-name">蛇男</view>
+        </view>
+        <view class="sell-well-book">
+          <image class="sell-well-book-img" src="../images/type_dushi.png"></image>
+          <view class="sell-well-book-name">蛇男</view>
+        </view>
+        <view class="sell-well-book">
+          <image class="sell-well-book-img" src="../images/type_dushi.png"></image>
+          <view class="sell-well-book-name">蛇男</view>
+        </view>
+        <view class="sell-well-book">
+          <image class="sell-well-book-img" src="../images/type_dushi.png"></image>
+          <view class="sell-well-book-name">蛇男</view>
+        </view>
+        <view class="sell-well-book">
+          <image class="sell-well-book-img" src="../images/type_dushi.png"></image>
+          <view class="sell-well-book-name">蛇男</view>
+        </view>
+        <view class="sell-well-book">
+          <image class="sell-well-book-img" src="../images/type_dushi.png"></image>
+          <view class="sell-well-book-name">蛇男</view>
+        </view>
+      </view>
+    </view>
+    <!-- 都市爽文 -->
+    <view class="city-shuangwen">
+      <view class="recommend-title">都市爽文</view>
+      <view class="city-shuangwen-item">
+        <image class="city-shuangwen-item-img"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">甲乙丙丁</view>
+          <view class="city-shuangwen-item-introduce">甲乙丙丁</view>
+          <view class="author-and-popularity">
+            <view class="author">路人甲 | 现代都市</view>
+            <view class="popularity">234万人气值</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="city-shuangwen-item">
+        <image class="city-shuangwen-item-img"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">甲乙丙丁</view>
+          <view class="city-shuangwen-item-introduce">甲乙丙丁</view>
+          <view class="author-and-popularity">
+            <view class="author">路人甲 | 现代都市</view>
+            <view class="popularity">234万人气值</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="city-shuangwen-item">
+        <image class="city-shuangwen-item-img"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">甲乙丙丁</view>
+          <view class="city-shuangwen-item-introduce">甲乙丙丁</view>
+          <view class="author-and-popularity">
+            <view class="author">路人甲 | 现代都市</view>
+            <view class="popularity">234万人气值</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <!-- 悬疑探险 -->
+    <view class="suspense-adventure">
+      <view class="recommend-title">悬疑探险</view>
+      <view class="suspense-adventure-box">
+        <view class="suspense-adventure-item">
+          <image class="suspense-adventure-item-img"></image>
+          <view class="suspense-adventure-item-name">一路走好</view>
+        </view>
+        <view class="suspense-adventure-item">
+          <image class="suspense-adventure-item-img"></image>
+          <view class="suspense-adventure-item-name">一路走好</view>
+        </view>
+        <view class="suspense-adventure-item">
+          <image class="suspense-adventure-item-img"></image>
+          <view class="suspense-adventure-item-name">一路走好</view>
+        </view>
+      </view>
+    </view>
+    <!-- 新书速递 -->
+    <view class="new-book-express">
+      <view class="recommend-title">新书速递 <image class="current-icon" src="../images/title_more.png"></image>
+      </view>
+      <view class="new-book-express-item">
+        <image class="new-book-express-img"></image>
+        <view class="new-book-express-content">
+          <view class="new-book-express-name">捉鬼天师</view>
+          <view class="new-book-express-introduce">人间</view>
+          <view class="author-and-popularity">
+            <view class="author">路人甲 | 现代都市</view>
+            <view class="popularity">234万人气值</view>
+          </view>
+        </view>
+      </view>
+      <view class="new-book-express-item">
+        <image class="new-book-express-img"></image>
+        <view class="new-book-express-content">
+          <view class="new-book-express-name">捉鬼天师</view>
+          <view class="new-book-express-introduce">人间</view>
+          <view class="author-and-popularity">
+            <view class="author">路人甲 | 现代都市</view>
+            <view class="popularity">234万人气值</view>
+          </view>
+        </view>
+      </view>
+      <view class="new-book-express-item">
+        <image class="new-book-express-img"></image>
+        <view class="new-book-express-content">
+          <view class="new-book-express-name">捉鬼天师</view>
+          <view class="new-book-express-introduce">人间</view>
+          <view class="author-and-popularity">
+            <view class="author">路人甲 | 现代都市</view>
+            <view class="popularity">234万人气值</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 排行榜单 -->
+    <view class="ranking-list">
+      <view class="recommend-title">排行榜单 <image class="current-icon" src="../images/title_more.png"></image>
+      </view>
+      <van-tabs active="{{ active }}" line-height="0px" title-active-color="red">
+        <van-tab title="标签 1">12</van-tab>
+        <van-tab title="标签 2">内容 2</van-tab>
+        <van-tab title="标签 3">内容 3</van-tab>
+        <van-tab title="标签 4">内容 4</van-tab>
+        <van-tab title="标签 5">内容 4</van-tab>
+      </van-tabs>
+    </view>
+    <!-- 专题 -->
+
+
+  </view>
+</view>

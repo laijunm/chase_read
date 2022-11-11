@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/bookself/bookself",
+    "pages/user/user",
+    "pages/discover/discover"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小说",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "selectedColor": "#e4393c",
+    "list": [
+      {
+        "text":"书架",
+         "pagePath":"pages/bookself/bookself",
+         "selectedIconPath": "./pages/images/bookshelf_btn_p.png",
+         "iconPath": "./pages/images/bookshelf_btn_n.png"
+         },
+      {
+      "text":"书城",
+       "pagePath":"pages/index/index",
+       "selectedIconPath": "./pages/images/store_btn_p.png",
+       "iconPath": "./pages/images/store_btn_n.png"
+       },
+       {
+        "text":"发现",
+         "pagePath":"pages/discover/discover",
+         "selectedIconPath": "./pages/images/icon_find.png",
+         "iconPath": "./pages/images/icon_find_gray.png"
+         },
+       {
+        "text":"用户",
+        "pagePath": "pages/user/user",
+        "selectedIconPath": "./pages/images/my_btn_p.png",
+        "iconPath": "./pages/images/my_btn_n.png"
+       }
+      ]
+   
+  },
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  },
+    "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap.json"
+}

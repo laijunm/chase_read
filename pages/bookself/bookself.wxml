@@ -1,0 +1,47 @@
+<view class="bookself">
+  <view class="head-bar">
+    <text class="title">书架</text>
+    <view class="right-icon">
+      <image class="icon" src="../images/search_img_black.png" alt="" srcset="" />
+      <image class="icon" src="../images/edit_black.png" alt="" srcset="" />
+    </view>
+  </view>
+  <view class="boolself-main">
+    <view class="book">
+      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
+      <text class="book-name">乌拉乌拉乌</text>
+    </view>
+    <view class="book">
+      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
+      <text class="book-name">乌拉乌拉乌</text>
+    </view>
+    <view class="book">
+      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
+      <text class="book-name">乌拉乌拉乌</text>
+    </view>
+    <view class="book">
+      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
+      <text class="book-name">乌拉乌拉乌</text>
+    </view>
+    <view class="book">
+      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
+      <text class="book-name">乌拉乌拉乌</text>
+    </view>
+    <view class="book">
+      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
+      <text class="book-name">乌拉乌拉乌</text>
+    </view>
+    <view class="book">
+      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
+      <text class="book-name">乌拉乌拉乌</text>
+    </view>
+    <view class="book">
+      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
+      <text class="book-name">乌拉乌拉乌</text>
+    </view>
+    <view class="book">
+      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
+      <text class="book-name">乌拉乌拉乌</text>
+    </view>
+  </view>
+</view>
