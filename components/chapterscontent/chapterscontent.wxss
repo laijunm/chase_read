@@ -1,0 +1,43 @@
+.chapters-content{
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  width: 100vw;
+  height: 100vh;
+box-sizing: border-box;
+background-color: rgb(199, 237, 204);
+overflow: auto;
+}
+
+.book-menu-up{
+height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+  color: #eee;
+  background-color: rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.book-catalogue-chapters{
+  font-size: 12px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.wxParse-h1{
+  text-align: center;
+}
+
+.wxParse-p{
+  text-indent: 2em;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.hight-current{
+  background-color: rgb(15, 247, 169);
+  color: #fff;
+}

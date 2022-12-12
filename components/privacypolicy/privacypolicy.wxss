@@ -1,0 +1,15 @@
+.container{
+  line-height: 30px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.h2 {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.p{
+  text-indent: 2em;
+}

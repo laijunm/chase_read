@@ -1,0 +1,289 @@
+<view>
+  <view class="swiper">
+    <swiper class="swiper-box" autoplay>
+      <swiper-item class="swiper-item">
+        <image class="swiper-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/type_dushi.png?sign=18176f24ed3b5c72820ec892faec8b3a&t=1669027349"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="swiper-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/type_lingyi.png?sign=ab14961ddb4c8d484592bca8375a0156&t=1669027310"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="swiper-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/type_xuanhuan.png?sign=b190d249903bfb8babade3644bb7ec3d&t=1669027361"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 内容 -->
+  <view class="book-city-classify-main">
+    <view class="classify-and-recommend {{isNightModel == true ? 'jingxuanpage' : ''}}">
+      <view class="book-city-classify {{isNightModel == true ? 'jingxuanpage' : ''}}">
+        <view class="classify-item" catchtap="routerStackRoom">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_classify.png?sign=8188da42cdff0d69183d92896b63b17b&t=1668430511"></image>
+        </view>
+        <view class="classify-item" catchtap="routerOrderOfBirth">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_rank.png?sign=cbfb2f11a7118e46187eb96611a592d1&t=1668430448"></image>
+        </view>
+        <view class="classify-item" catchtap="routerNoMoney">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_free.png?sign=68f1d566bea25fc2ad2b78b1d9b51b11&t=1668430477"></image>
+        </view>
+        <view class="classify-item" catchtap="routerWanBen">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_end.png?sign=205d31fb471f8fd8857388c25471a531&t=1668430493"></image>
+        </view>
+        <view class="classify-item" catchtap="routeNewBooks">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_new.png?sign=79ff4574665bf7db796bfb3dfe98d8a8&t=1668430430"></image>
+        </view>
+      </view>
+      <!-- 主打推荐 -->
+      <view class="leading-recommend">
+        <view class="recommend-title">主打推荐</view>
+        <view class="recommend-box">
+          <view class="recommend-left" data-id="{{wanBen[6].id}}" data-img="{{ wanBen[6].cover}}" data-words="{{wanBen[6].extra}}" bindtap="clickUseFunction">
+            <image class="recommend-left-img" src="{{ wanBen[6].cover}}"></image>
+            <view class="recommend-book-name">{{wanBen[6].title}}</view>
+            <view class="recommend-book-introduce">{{wanBen[6].content}}</view>
+          </view>
+          <view class="recommend-right">
+            <view class="recommend-right-book" data-id="{{wanBen[5].id}}" data-img="{{ wanBen[5].cover}}" data-words="{{wanBen[5].extra}}"  bindtap="clickUseFunction">
+              <image class="recommend-right-img" src="{{wanBen[5].cover}}"></image>
+              <view class="recommend-book-name">{{wanBen[5].title}}</view>
+              <view class="recommend-book-introduce">{{wanBen[5].content}}</view>
+            </view>
+            <view class="recommend-right-book" data-id="{{wanBen[7].id}}" data-img="{{ wanBen[7].cover}}" data-words="{{wanBen[7].extra}}"  bindtap="clickUseFunction">
+              <image class="recommend-right-img" src="{{wanBen[7].cover}}"></image>
+              <view class="recommend-book-name">{{wanBen[7].title}}</view>
+              <view class="recommend-book-introduce">{{wanBen[7].content}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 本期热销 -->
+    <view class="current-eriod-sell-well">
+      <view class="recommend-title">本期热销
+      </view>
+      <view class="sell-well-books">
+        <view class="sell-well-book" data-id="{{wanBen[8].id}}" data-img="{{ wanBen[8].cover}}" data-words="{{wanBen[8].extra}}"  bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{wanBen[8].cover}}"></image>
+          <view class="sell-well-book-name">{{wanBen[8].title}}</view>
+        </view>
+        <view class="sell-well-book" data-id="{{wanBen[9].id}}" data-img="{{ wanBen[9].cover}}" data-words="{{wanBen[9].extra}}"  bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{wanBen[9].cover}}"></image>
+          <view class="sell-well-book-name">{{wanBen[9].title}}</view>
+        </view>
+        <view class="sell-well-book" data-id="{{wanBen[10].id}}" data-img="{{ wanBen[10].cover}}" data-words="{{wanBen[10].extra}}"  bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{wanBen[10].cover}}"></image>
+          <view class="sell-well-book-name">{{wanBen[10].title}}</view>
+        </view>
+        <view class="sell-well-book" data-id="{{wanBen[4].id}}" data-img="{{ wanBen[4].cover}}" data-words="{{wanBen[4].extra}}"  bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{wanBen[4].cover}}"></image>
+          <view class="sell-well-book-name">{{wanBen[4].title}}</view>
+        </view>
+        <view class="sell-well-book" data-id="{{wanBen[5].id}}" data-img="{{ wanBen[5].cover}}" data-words="{{wanBen[5].extra}}"  bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{wanBen[5].cover}}"></image>
+          <view class="sell-well-book-name">{{wanBen[5].title}}</view>
+        </view>
+        <view class="sell-well-book" data-id="{{wanBen[6].id}}" data-img="{{ wanBen[6].cover}}" data-words="{{wanBen[6].extra}}"  bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{wanBen[6].cover}}"></image>
+          <view class="sell-well-book-name">{{wanBen[6].title}}</view>
+        </view>
+
+
+      </view>
+    </view>
+    <!-- 都市爽文 -->
+    <view class="city-shuangwen">
+      <view class="recommend-title">都市爽文</view>
+      <view class="city-shuangwen-item" data-id="{{cityList[0].id}}" data-img="{{ cityList[0].cover}}" data-words="{{wanBen[0].extra}}"  bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[0].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[0].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[0].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[0].author}} | {{cityList[0].category}}</view>
+            <view class="popularity">精选</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="city-shuangwen-item" data-id="{{cityList[1].id}}" data-img="{{ cityList[1].cover}}" data-words="{{wanBen[1].extra}}"  bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[1].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[1].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[1].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[1].author}} | {{cityList[1].category}}</view>
+            <view class="popularity">精选</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="city-shuangwen-item" data-id="{{cityList[2].id}}" data-img="{{ cityList[2].cover}}" data-words="{{wanBen[2].extra}}"  bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[2].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[2].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[2].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[2].author}} | {{cityList[2].category}}</view>
+            <view class="popularity">精选</view>
+          </view>
+        </view>
+
+      </view>
+
+
+    </view>
+    <!-- 悬疑探险 -->
+    <view class="suspense-adventure">
+      <view class="recommend-title">悬疑探险</view>
+      <view class="suspense-adventure-box">
+        <view class="suspense-adventure-item" data-id="{{suspenseList[0].id}}" data-img="{{ suspenseList[0].cover}}" data-words="{{wanBen[0].extra}}"  bindtap="clickUseFunction">
+          <image class="suspense-adventure-item-img" src="{{suspenseList[0].cover}}"></image>
+          <view class="suspense-adventure-item-name">{{suspenseList[0].name}}</view>
+        </view>
+        <view class="suspense-adventure-item" data-id="{{suspenseList[1].id}}" data-img="{{ suspenseList[1].cover}}" data-words="{{wanBen[1].extra}}"  bindtap="clickUseFunction">
+          <image class="suspense-adventure-item-img" src="{{suspenseList[1].cover}}"></image>
+          <view class="suspense-adventure-item-name">{{suspenseList[1].name}}</view>
+        </view>
+        <view class="suspense-adventure-item" data-id="{{suspenseList[2].id}}" data-img="{{ suspenseList[2].cover}}" data-words="{{wanBen[2].extra}}"  bindtap="clickUseFunction">
+          <image class="suspense-adventure-item-img" src="{{suspenseList[2].cover}}"></image>
+          <view class="suspense-adventure-item-name">{{suspenseList[2].name}}</view>
+        </view>
+
+      </view>
+    </view>
+    <!-- 新书速递 -->
+    <view class="new-book-express">
+      <view class="recommend-title">新书速递
+      </view>
+      <view class="new-book-express-item" data-id="{{newBooksList[0].id}}" data-img="{{ newBooksList[0].cover}}" data-words="{{wanBen[0].extra}}"  bindtap="clickUseFunction">
+        <image class="new-book-express-img" src="{{newBooksList[0].cover}}"></image>
+        <view class="new-book-express-content">
+          <view class="new-book-express-name">{{newBooksList[0].title}}</view>
+          <view class="new-book-express-introduce">{{newBooksList[0].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{newBooksList[0].author}} | {{newBooksList[0].majorCate}}</view>
+            <view class="popularity">精选</view>
+          </view>
+        </view>
+      </view>
+      <view class="new-book-express-item" data-id="{{newBooksList[1].id}}" data-img="{{ newBooksList[1].cover}}" data-words="{{wanBen[1].extra}}"  bindtap="clickUseFunction">
+        <image class="new-book-express-img" src="{{newBooksList[1].cover}}"></image>
+        <view class="new-book-express-content">
+          <view class="new-book-express-name">{{newBooksList[1].title}}</view>
+          <view class="new-book-express-introduce">{{newBooksList[1].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{newBooksList[1].author}} | {{newBooksList[1].majorCate}}</view>
+            <view class="popularity">精选</view>
+          </view>
+        </view>
+      </view>
+      <view class="new-book-express-item" data-id="{{newBooksList[2].id}}" data-img="{{ newBooksList[2].cover}}" data-words="{{wanBen[2].extra}}"  bindtap="clickUseFunction">
+        <image class="new-book-express-img" src="{{newBooksList[2].cover}}"></image>
+        <view class="new-book-express-content">
+          <view class="new-book-express-name">{{newBooksList[2].title}}</view>
+          <view class="new-book-express-introduce">{{newBooksList[2].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{newBooksList[2].author}} | {{newBooksList[2].majorCate}}</view>
+            <view class="popularity">精选</view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+    <!-- 排行榜单 -->
+    <view class="ranking-list">
+      <view class="recommend-title">排行榜单
+      </view>
+      <van-tabs active="{{ active }}" line-height="0" title-active-color="red">
+        <van-tab title="月票榜">
+          <swiper class="ranking-list-swiper" display-multiple-items="3" next-margin="20px">
+            <swiper-item class="ranking-list-swiper-item" wx:for="{{monList}}" wx:key="index" data-id="{{item.id}}" data-img="{{ item.cover}}"  data-words="{{item.extra}}" bindtap="clickUseFunction">
+              <view class="ranking-list-book">
+                <image class="ranking-list-book-img" src="{{item.cover}}"></image>
+                <view class="ranking-list-book-name">{{item.title}}</view>
+                <view>
+                  <view class="ranking-list-book-icon {{index == 0 ? 'icon-active' : ''}}">{{index + 1}}</view>
+                </view>
+              </view>
+            </swiper-item>
+
+          </swiper>
+        </van-tab>
+        <van-tab title="推荐榜">
+          <swiper class="ranking-list-swiper" display-multiple-items="3" next-margin="20px">
+            <swiper-item class="ranking-list-swiper-item" wx:for="{{wanBen}}" wx:key="index" data-id="{{item.id}}" data-img="{{item.cover}}"  data-words="{{item.extra}}" bindtap=" clickUseFunction">
+              <view class="ranking-list-book">
+                <image class="ranking-list-book-img" src="{{item.cover}}"></image>
+                <view class="ranking-list-book-name">{{item.title}}</view>
+                <view>
+                  <view class="ranking-list-book-icon {{index == 0 ? 'icon-active' : ''}}">{{index + 1}}</view>
+                </view>
+              </view>
+            </swiper-item>
+
+          </swiper>
+        </van-tab>
+        <van-tab title="分享榜">
+          <swiper class="ranking-list-swiper" display-multiple-items="3" next-margin="20px">
+            <swiper-item class="ranking-list-swiper-item" wx:for="{{shareList}}" wx:key="index" data-id="{{item.id}}" data-words="{{item.extra}}"  data-img="{{ item.cover}}" bindtap="clickUseFunction">
+              <view class="ranking-list-book">
+                <image class="ranking-list-book-img" src="{{item.cover}}"></image>
+                <view class="ranking-list-book-name">{{item.title}}</view>
+                <view>
+                  <view class="ranking-list-book-icon {{index == 0 ? 'icon-active' : ''}}">{{index + 1}}</view>
+                </view>
+              </view>
+            </swiper-item>
+
+          </swiper>
+        </van-tab>
+        <van-tab title="新书榜">
+          <swiper class="ranking-list-swiper" display-multiple-items="3" next-margin="20px">
+            <swiper-item class="ranking-list-swiper-item" wx:for="{{newBooksList}}" wx:key="index" data-words="{{item.extra}}"   data-img="{{ item.cover}}" data-id="{{item.id}}" bindtap="clickUseFunction">
+              <view class="ranking-list-book">
+                <image class="ranking-list-book-img" src="{{item.cover}}"></image>
+                <view class="ranking-list-book-name">{{item.title}}</view>
+                <view>
+                  <view class="ranking-list-book-icon {{index == 0 ? 'icon-active' : ''}}">{{index + 1}}</view>
+                </view>
+              </view>
+            </swiper-item>
+
+          </swiper>
+        </van-tab>
+        <van-tab title="完本榜">
+          <swiper class="ranking-list-swiper" display-multiple-items="3" next-margin="20px">
+            <swiper-item class="ranking-list-swiper-item" wx:for="{{wanBenList}}" wx:key="index" data-words="{{item.extra}}"  data-id="{{item.id}}"   data-img="{{ item.cover}}" bindtap="clickUseFunction">
+              <view class="ranking-list-book">
+                <image class="ranking-list-book-img" src="{{item.cover}}"></image>
+                <view class="ranking-list-book-name">{{item.title}}</view>
+                <view>
+                  <view class="ranking-list-book-icon {{index == 0 ? 'icon-active' : ''}}">{{index + 1}}</view>
+                </view>
+              </view>
+            </swiper-item>
+
+          </swiper>
+        </van-tab>
+      </van-tabs>
+    </view>
+    <!-- 专题 -->
+    <view class="special-subject">
+      <view class="recommend-title">专题
+      </view>
+      <view class="swiper">
+        <swiper class="swiper-box" display-multiple-items="1.2">
+          <swiper-item class="swiper-item">
+            <image class="special-subject-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/type_dushi.png?sign=18176f24ed3b5c72820ec892faec8b3a&t=1669027349"></image>
+          </swiper-item>
+          <swiper-item>
+            <image class="special-subject-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/type_lingyi.png?sign=ab14961ddb4c8d484592bca8375a0156&t=1669027310"></image>
+          </swiper-item>
+          <swiper-item>
+            <image class="special-subject-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/type_xuanhuan.png?sign=b190d249903bfb8babade3644bb7ec3d&t=1669027361"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+
+  </view>
+</view>

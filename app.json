@@ -3,48 +3,71 @@
     "pages/index/index",
     "pages/bookself/bookself",
     "pages/user/user",
-    "pages/discover/discover"
+    "components/xuanyipages/xuanyipage",
+    "components/bookpage/bookpage",
+    "pages/login/login",
+    "pages/discover/discover",
+    "components/edituserpage/edituserdata",
+    "components/borwsinghistory/borwsinghistory",
+    "components/useragreement/useragreement",
+    "components/privacypolicy/privacypolicy",
+    "components/wanbenspecial/wanbenspecial",
+    "components/stackroom/stackroom",
+    "components/orderofbirth/orderofbirth",
+    "components/newbooks/newbooks",
+    "components/nomoney/nomoney",
+    "components/bookcatalogue/bookcatalogue",
+    "components/chapterscontent/chapterscontent"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "小说",
+    "navigationBarTitleText": "书城",
     "navigationBarTextStyle": "black"
   },
-  "tabBar":{
+  "tabBar": {
     "selectedColor": "#e4393c",
     "list": [
       {
-        "text":"书架",
-         "pagePath":"pages/bookself/bookself",
-         "selectedIconPath": "./pages/images/bookshelf_btn_p.png",
-         "iconPath": "./pages/images/bookshelf_btn_n.png"
-         },
+        "text": "书架",
+        "pagePath": "pages/bookself/bookself",
+        "selectedIconPath": "./pages/images/bookshelf_btn_p.png",
+        "iconPath": "./pages/images/bookshelf_btn_n.png"
+      },
       {
-      "text":"书城",
-       "pagePath":"pages/index/index",
-       "selectedIconPath": "./pages/images/store_btn_p.png",
-       "iconPath": "./pages/images/store_btn_n.png"
-       },
-       {
-        "text":"发现",
-         "pagePath":"pages/discover/discover",
-         "selectedIconPath": "./pages/images/icon_find.png",
-         "iconPath": "./pages/images/icon_find_gray.png"
-         },
-       {
-        "text":"用户",
+        "text": "书城",
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "./pages/images/store_btn_p.png",
+        "iconPath": "./pages/images/store_btn_n.png"
+      },
+      {
+        "text": "发现",
+        "pagePath": "pages/discover/discover",
+        "selectedIconPath": "./pages/images/icon_find.png",
+        "iconPath": "./pages/images/icon_find_gray.png"
+      },
+      {
+        "text": "用户",
         "pagePath": "pages/user/user",
         "selectedIconPath": "./pages/images/my_btn_p.png",
         "iconPath": "./pages/images/my_btn_n.png"
-       }
-      ]
-   
+      }
+    ]
   },
   "usingComponents": {
     "van-tab": "@vant/weapp/tab/index",
-    "van-tabs": "@vant/weapp/tabs/index"
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-slider": "@vant/weapp/slider/index"
   },
-    "lazyCodeLoading": "requiredComponents",
+  "lazyCodeLoading": "requiredComponents",
   "sitemapLocation": "sitemap.json"
 }

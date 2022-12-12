@@ -1,0 +1,20 @@
+<view class="order-of-birth">
+  <view class="left-title">
+    <view class="title-text {{active == index ? 'active' : ''}}" wx:for="{{booksBirthTitleList}}" wx:key="index" catchtap="activeClickToggle" data-index="{{index}}" data-url="{{item.naviInfos[0].url}}">{{item.name}}</view>
+  </view>
+  <view class="right-books">
+    <view class="book-content" wx:for="{{booksDataArray}}" wx:key="index" data-img="{{item.cover}}" data-id="{{item.id}}" catchtap="clickUseFunction">
+      <view class="img-and-icon">
+        <view class="ranking-list-book-icon {{index == 0 ? 'icon-active' : index == 1 ? 'icon-active-two' : index == 2 ? 'icon-active-three' : ''}}">{{index + 1}}</view>
+        <image class="right-book-img" src="{{item.cover}}"></image>
+      </view>
+
+      <view class="right-book-content">
+        <view class="right-book-name">{{item.title}}</view>
+        <view class="right-book-introduce">{{item.content}}</view>
+        <view class="right-book-author">{{item.author}}</view>
+      </view>
+
+    </view>
+  </view>
+</view>

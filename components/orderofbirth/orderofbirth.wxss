@@ -1,0 +1,94 @@
+.order-of-birth{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+}
+
+.active{
+  color: red;
+  background-color: #fff;
+}
+
+.left-title{
+ background-color: rgb(247, 247, 247);
+  text-align: center;
+}
+
+.title-text{
+  width: 80px;
+  font-size: 14px;
+ padding: 15px 0px;
+}
+
+.right-books{
+  padding: 6px 15px;
+}
+
+.book-content{
+  display: flex;
+  padding: 8px 0px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.right-book-img{
+  width: 60px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 6px #ddd;
+
+}
+
+.right-book-content{
+  width: 145px;
+  margin-left: 10px;
+  padding: 6px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #999;
+
+}
+
+.right-book-name{
+  font-size: 14px;
+  color: #000;
+}
+
+.right-book-introduce{
+  margin: 8px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis ;
+  white-space: nowrap;
+}
+
+.img-and-icon{
+  position: relative;
+}
+
+.ranking-list-book-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 20px;
+  background-image: url(https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/rank_four.png?sign=b6ba5ebd7f3f7443e3a7a75a36b1b750&t=1668224052);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+}
+
+.icon-active{
+  color: #fff;
+  background-image: url(https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/ranking_1.png?sign=0afa08a11a50b382756ee67e95582896&t=1668223064);
+  }
+.icon-active-two{
+  color: #fff;
+  background-image: url(https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/ranking_2.png?sign=3463babd15e52953d18e0e934a2785df&t=1669015362);
+  }
+.icon-active-three{
+  color: #fff;
+  background-image: url(https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/ranking_3.png?sign=f455164322a514a4ff3762c4cb7455d0&t=1669015397);
+  }

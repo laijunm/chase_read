@@ -1,0 +1,383 @@
+.title {
+  font-size: 13px;
+  margin: 0px 5px;
+  padding-bottom: 5px;
+
+}
+
+.titleActive {
+  border-bottom:2px solid #000 ;
+}
+
+
+.swiper-box {
+  height: 120px;
+}
+
+.swiper-img {
+  width: 100vw;
+  height: 120px;
+}
+
+
+.book-city-classify-main {
+  background-color: #ddd;
+}
+
+.classify-and-recommend {
+  padding: 5px 15px;
+  background-color: #fff;
+}
+
+.book-city-classify {
+  display: flex;
+  margin-top: 10px;
+
+  justify-content: space-between;
+}
+
+.classify-item-img {
+  width: 30px;
+  height: 50px;
+}
+
+.leading-recommend{
+    margin-top: 20px;
+}
+
+.recommend-title {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+margin-bottom: 20px;
+}
+
+.recommend-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommend-left,.recommend-right{
+  width: 44%;
+}
+
+.recommend-left-img{
+  width: 100%;
+  height: 180px;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.recommend-book-name{
+  margin: 5px ;
+  font-size: 14px;
+}
+
+.recommend-book-introduce{
+  font-size: 13px;
+  color: #999;
+  margin-left: 5px;
+}
+
+.recommend-right-book{
+  width: 100%;
+  margin-bottom:10px ;
+}
+
+.recommend-right-img{
+  width: 100%;
+  height: 60px;
+  background-color: #ddd;
+  border-radius: 8px;
+
+}
+
+.current-eriod-sell-well{
+  margin-top:10px ;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.current-icon{
+  position: absolute;
+width: 20px;
+height: 20px;
+top: 0;
+right: 0;
+}
+
+.sell-well-books{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.sell-well-book{
+  margin: 0px 8px 20px;
+}
+.sell-well-book-img {
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.sell-well-book-name{
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.city-shuangwen{
+margin-top: 10px;
+background-color: #fff;
+padding: 10px 15px;
+}
+
+.city-shuangwen-item{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.city-shuangwen-item-img{
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 0px 2px 6px #aaa;
+}
+
+.city-shuangwen-item-text{
+ padding-top: 15px;
+ width: 192px;
+}
+
+.city-shuangwen-item-title{
+  font-size: 14px;
+}
+
+.city-shuangwen-item-introduce{
+  font-size: 12px;
+  color: #999;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 10px 0px;
+}
+
+.author-and-popularity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+}
+
+.popularity{
+  color: rgb(247, 223, 9);
+}
+
+.suspense-adventure{
+margin-top: 10px;
+background-color: #fff;
+padding: 10px 15px;
+}
+
+.suspense-adventure-box{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.suspense-adventure-item{
+  width: 80px;
+}
+
+.suspense-adventure-item-img{
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 6px #aaa;
+}
+
+.suspense-adventure-item-name{
+  font-size: 14px;
+}
+
+.new-book-express{
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 15px;
+}
+
+.new-book-express-item{
+  display: flex;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+
+.new-book-express-img{
+width: 80px;
+height: 100px;
+border-radius: 8px;
+box-shadow: 0px 2px 6px #aaa;
+margin-right: 20px;
+}
+
+.new-book-express-content{
+  padding-top: 15px;
+  width: 200px;
+}
+.new-book-express-name{
+  font-size: 14px;
+}
+
+.new-book-express-introduce{
+  margin: 10px 0px ;
+  font-size: 13px;
+  color: #999;
+}
+.author {
+color: #999;
+}
+
+.ranking-list{
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 15px ;
+}
+
+
+.ranking-list-swiper-item{
+  margin-left: 10px;
+}
+
+.ranking-swiper-item-img{
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+
+.ranking-list-book {
+  position: relative;
+  width: 80px;
+}
+
+.ranking-list-book-img{
+  width: 80px;
+  height: 100px;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.ranking-list-book-name{
+font-size: 13px;
+text-align: center;
+}
+
+.ranking-list-book-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 20px;
+  background-image: url(https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/rank_four.png?sign=b6ba5ebd7f3f7443e3a7a75a36b1b750&t=1668224052);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+}
+
+.ranking-list-book-icon:first-child{
+color: #fff;
+background-image: url(https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/ranking_1.png?sign=0afa08a11a50b382756ee67e95582896&t=1668223064);
+}
+
+.special-subject{
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 15px ;
+}
+
+.special-subject-img{
+  width: 70vw;
+  height: 100px;
+  border-radius:8px ;
+  margin-right: 10px;
+}
+
+.main-issue-up {
+  display: flex;
+}
+
+.main-issue-up-img {
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px #aaa;
+}
+
+.book-content {
+  width: 180px;
+  margin-left: 10px;
+  padding-top: 15px;
+}
+
+.book-name {
+  font-size: 14px;
+
+}
+
+.book-introduce {
+  font-size: 13px;
+  color: #999;
+  margin: 10px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main-issue-down {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.book-author {
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+}
+
+.book-name-center {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.wanben-boutique-box {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.new-book-express-introduce {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-name-center,.book-author{
+  width: 80px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sell-well-book-img{
+  box-shadow: 1px 2px 6px #999;
+}

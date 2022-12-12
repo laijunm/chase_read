@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+"jing-xuan":"../../components/jingxuanpages/jingxuanpage",
+"du-shi":"../../components/dushipages/dushipages",
+"xuan-huan":"../../components/xuanhuanpages/xuanhuanpage",
+"xuan-yi":"../../components/xuanyipages/xuanyipage",
+"book-page":"../../components/bookpage/bookpage",
+"edit":"../../components/edituserpage/edituserdata",
+"history":"../../components/borwsinghistory/borwsinghistory"
+  }
+}

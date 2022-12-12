@@ -1,0 +1,61 @@
+<wxs module="filter" src="../../jingxuanpage.wxs"></wxs>
+<view class="book-page">
+<view class="loading" wx:if="{{loading == true}}"><van-loading  class="van-loading-book" type="spinner" size="50px" color="#000"  vertical>努力加载中...</van-loading></view>
+  <view class="book-content-bookpage">
+    <image class="book-img" src="{{bookImg}}"></image>
+    <view class="book-detailed">
+      <view class="title-and-collect">
+        <view class="book-title">{{bookDetails.title}}</view>
+        <view class="collect {{bookIsNotCollect == true ? 'collect-active' : ''}}" bindtap="dataStroage" data-id="{{bookDetails.id}}">
+          <van-icon name="goods-collect" size="20px" />
+        </view>
+      </view>
+      <view class="book-type-and-author">
+        <view class="type">{{bookDetails.book.category}}</view><view class="the-author">{{bookDetails.author.name}}</view> 
+      </view>
+      <view class="book-box">
+        <view class="book-box-left">
+          <view class="book-isFinsh">{{zhangjienum}}</view>
+          <view class="book-word-count"></view>
+        </view>
+        <view class="book-box-right">
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="user-operation">
+    <view class="user-operation-item">
+      <view class="number">{{bookDetails.ranking.value || 4.5}}</view>评分
+    </view>
+    <view class="line-icon"></view>
+    <view class="user-operation-item">
+      <view class="number">{{bookDetails.subscribe.clicksCount || 123}} </view>点击
+    </view>
+    <view class="line-icon"></view>
+    <view class="user-operation-item">
+      <view class="number">12</view>粉丝
+    </view>
+    <view class="line-icon"></view>
+    <view class="user-operation-item">
+      <view class="number">123</view>分享
+    </view>
+  </view>
+
+  <view class="book-catalogue">
+    <view class="book-catalogue-up">目录：</view>
+    <view class="book-catalogue-down" data-uid="{{bookDetails.id}}" catchtap="routerCatalogue">
+      <view class="catalogue-down-left">
+        <view class="book-chapters">{{zhangjienum}}</view>
+        <view class="updated">更新于:{{bookDetails.updated}}</view>
+      </view>
+      <view class="catalogue-down-right">
+        <van-icon name="arrow" color="#777" size="14px" />
+      </view>
+    </view>
+  </view>
+  <view class="bookpage-introduce">{{bookDetails.content.text}}</view>
+  <view class="start-read" data-mid="{{bookDetails.id}}" catchtap="routerChaptersContent">开始阅读</view>
+  <van-toast id="van-toast" />
+</view>

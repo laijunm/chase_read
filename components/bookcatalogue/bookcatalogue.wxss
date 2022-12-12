@@ -1,0 +1,10 @@
+.book-catalogue{
+  padding: 5px 0px 0px 5px;
+}
+
+.book-catalogue-item{
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  padding: 8px 15px;
+  color: #999;
+}

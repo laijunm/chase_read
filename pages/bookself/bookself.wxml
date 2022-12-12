@@ -1,47 +1,30 @@
-<view class="bookself">
+<view class="{{isNightModel == true ? 'bookself' : ''}}">
   <view class="head-bar">
-    <text class="title">书架</text>
     <view class="right-icon">
-      <image class="icon" src="../images/search_img_black.png" alt="" srcset="" />
-      <image class="icon" src="../images/edit_black.png" alt="" srcset="" />
+      <view class="{{isNightModel == true ? 'bookself-icon' : ''}}">
+        <van-icon name="delete" class="delete-icon" size="18px" wx:if="{{deleteBookButton == true}}" bindtap="clickClearBooksList" />
+        <van-icon name="setting" wx:if="{{deleteBookButton == false}}" size="18px" bindtap="clickShowHiddenDeleteButton" />
+        <van-icon name="revoke" wx:if="{{deleteBookButton == true}}" size="18px" bindtap="clickShowHiddenDeleteButton" />
+      </view>
     </view>
   </view>
   <view class="boolself-main">
-    <view class="book">
-      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
-      <text class="book-name">乌拉乌拉乌</text>
+    <view class="bookself-empty" wx:if="{{!booksList}}">
+      <view class="van-bookself">
+        <van-divider contentPosition="center">你的书架空空的!
+        </van-divider>
+      </view>
+      <view>
+        <van-divider contentPosition="center">快去书城收藏一些吧!</van-divider></view>
+
+
     </view>
-    <view class="book">
-      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
-      <text class="book-name">乌拉乌拉乌</text>
-    </view>
-    <view class="book">
-      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
-      <text class="book-name">乌拉乌拉乌</text>
-    </view>
-    <view class="book">
-      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
-      <text class="book-name">乌拉乌拉乌</text>
-    </view>
-    <view class="book">
-      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
-      <text class="book-name">乌拉乌拉乌</text>
-    </view>
-    <view class="book">
-      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
-      <text class="book-name">乌拉乌拉乌</text>
-    </view>
-    <view class="book">
-      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
-      <text class="book-name">乌拉乌拉乌</text>
-    </view>
-    <view class="book">
-      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
-      <text class="book-name">乌拉乌拉乌</text>
-    </view>
-    <view class="book">
-      <image class="book-img" src="../images/login_dialog_bg.png" alt=""/>
-      <text class="book-name">乌拉乌拉乌</text>
+    <view class="book" wx:for="{{booksList}}" wx:key="index" data-id="{{item.id}}" data-img="{{item.img}}"  bindtap="clickUseFunction">
+      <image class="book-img" src="{{item.img}}" alt="" />
+      <text class="book-name">{{item.name}}</text>
+      
+        <van-icon class="delete"  wx:if="{{deleteBookButton == true}}" data-val="{{item.id}}" catchtap="clickDeteletBook" name="clear" color="red" />
+
     </view>
   </view>
 </view>

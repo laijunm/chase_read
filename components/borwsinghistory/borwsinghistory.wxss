@@ -1,0 +1,46 @@
+.borwsing-history{
+width: 100vw;
+height: 100vh;
+background-color: #fff;
+}
+
+.book {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.book-box-two{
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.book-history-img{
+  width: 80px;
+  height: 100px;
+  box-shadow: 1px 2px 6px #999;
+  border-radius: 8px;
+}
+
+.book-content{
+  margin-left: 10px;
+}
+.book-name-and-type{
+  font-size: 12px;
+  color: #999;
+  margin: 10px 0px 6px ;
+}
+
+.book-history-introduce{
+  width: 185px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.time {
+  margin-top: 12px;
+  font-size: 11px;
+}

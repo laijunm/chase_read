@@ -1,0 +1,110 @@
+.login {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding:0px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.login-head-img{
+  width: 60px;
+  height: 60px;
+  margin: 30px auto;
+}
+
+.login-head-image{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.login-input-box{
+  width: 260px;
+  margin: 0 auto;
+}
+
+.input {
+  width:260px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+}
+
+.input-get{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get-verification{
+  width: 80px;
+  font-size: 10px;
+  color: rgb(255, 53, 53);
+}
+
+.get-verification-color{
+color: #999;
+}
+
+
+.accomplish{
+  position: relative;
+width: 260px;
+height: 35px;
+line-height: 35px;
+text-align: center;
+border-radius: 4px;
+background-color: #999;
+margin: 20px auto 10px;
+color: #fff;
+}
+
+.password-login{
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  color: rgba(97, 139, 92, 0.747);
+}
+
+
+.other-login{
+  position: absolute;
+  width: 260px;
+  height: 130px;
+  bottom: 50px;
+  left: 50%;
+ transform: translateX(-50%);
+}
+
+.login-platform-icon{
+  display: flex;
+justify-content: space-evenly;
+}
+.platform-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}
+
+.read-protocol-policy{
+  display: flex;
+  font-size: 11px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.radio,.radio-img{
+  width: 15px;
+  height: 15px;
+  border-radius: 999px;
+  background-color:#fff;
+  margin-right: 5px;
+}
+.radio {
+  background-color: #ddd;
+}
+
+.van-toast{
+  font-size: 14px;
+}

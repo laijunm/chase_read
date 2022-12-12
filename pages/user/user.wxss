@@ -1,0 +1,114 @@
+.my-user {
+  background-color: #eee;
+  width: 100vw;
+  height: 100vh;
+}
+.my-user-night {
+  background-color: rgba(0, 0, 0,1) ;
+  color: #fff ;
+}
+
+
+.user-data{
+  display: flex;
+  width: 100vw;
+  height: 110px;
+  background-image: radial-gradient( 380px at left , rgb(255, 40, 0), rgb(255, 215, 0) , rgb(210,210,210));
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.user-data-night{
+  background-image: radial-gradient( 380px at left , rgba(0, 4, 255,.6), rgba(0, 225, 255,.6) , rgba(58, 241, 2,.6)) !important;
+  color: #fff ;
+}
+
+.user-head-img{
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.user-head-image{
+width: 100%;
+display: block;
+height: 100%;
+border-radius: 999px;
+background-color: #fff;
+}
+
+.name-and-signature{
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 215px;
+}
+
+.user-name{
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.user-main-content{
+  padding: 0px 15px;
+  background-color: #fff;
+}
+
+.user-personalized-signature{
+  font-size: 12px;
+  color: #fff;
+}
+
+.user-item-operate{
+padding: 15px 0px 5px;
+  background-color: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-item-operate:last-child{
+  border: none;
+}
+
+.user-special{
+  margin-top: 10px;
+}
+
+.van-icon{
+  transform: translateY(1px);
+  margin-right: 2px;
+}
+
+.view-login-box{
+  width: 100vw;
+  height:calc(100vh - 344px) ;
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #fff;
+
+}
+
+.login{
+  margin: 10px auto;
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 999px;
+  box-shadow: 1px 2px 6px #ddd;
+}
+
+.night-mode-icon{
+  width: 27px;
+  height: 18px;
+}
+
+.user-main-content-night{
+  background-color: rgba(0, 0, 0, 1) ;
+  color: #fff !important;
+}

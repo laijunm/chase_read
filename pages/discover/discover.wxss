@@ -1,0 +1,118 @@
+.discover{
+  width: 100vw;
+  height: 100vh;
+}
+
+.discover-form{
+  width: 100%;
+  height: 40px;
+  border:1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10px;
+}
+
+.discover-img{
+  width: 18px;
+  height: 18px;
+}
+
+.discover-input{
+  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding:2px  5px;
+  margin-left: 10px;
+}
+
+.discover-button{
+color: red;
+background-color: #eee;
+width:50px;
+height:32px;
+font-size: 14px;
+text-align: center;
+padding: 0;
+line-height: 30px;
+}
+
+.discover-books-list{
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.seach-result,.seach-recommend-title{
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+  border-left: 4px solid red;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.seach-books-list{
+  width: 100%;
+  height: 120px;
+  padding: 5px 0px;
+  display: flex;
+}
+
+.seach-book-img{
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 6px #ccc;
+  margin-right: 10px;
+}
+
+.seach-book-content{
+  padding-top: 5px;
+  width: calc(100% - 90px);
+  
+}
+
+.seach-book-title{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.seach-author-type{
+  display: flex;
+  justify-content: space-between;
+}
+
+.seach-book-name{
+  font-size: 12px;
+  color: #888;
+  margin: 10px 0px;
+}
+
+.seach-book-introduce{
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.seach-book-type{
+  font-size: 12px;
+  color: #888;
+}
+
+.seach-recommend{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.seach-seach-recommend-item{
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 999px;
+  box-shadow: 1px 2px 6px #ddd;
+  margin: 10px 15px;
+  font-size: 14px;
+}

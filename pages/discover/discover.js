@@ -1,66 +1,64 @@
-// pages/discover/discover.js
+const app = getApp()
+const seachRecommend = require("../../data/seachrecommend.js");
+const seachResult = require("../../data/seachResult.js");
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    books:[],
+    seachText:'',
+    seachHistoryArray:[],
+    showHidden:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+      this.setData({
+        seachHistoryArray:seachRecommend.default.books
+      })
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
+ discoverFromHandel(e) {
+   let book = e.detail.value.bookName
 
-  },
+   this.setData({
+    seachText:book,
+   })
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
+   if(book == '') {
+     return
+   }
+this.getSeachData(book)
+ },
+ getSeachData(book){
+   let that = this
+  wx.request({
+    url: 'https://apis.netstart.cn/yunyuedu/search/book.json?keyword=' + book,
+    success(res) {
+      that.setData({
+        books:res.data.data.books,
+        showHidden:true       
+      })
+    }
+  })
+  // this.setData({
+  //   books:seachResult.default.books,
+  //   showHidden:true       
+  // })
+ },
 
-  },
+ recommendItemClick(e) {
+  let text = e.target.dataset.text
+  this.getSeachData(text)
+ },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
+ clickUseFunction:function(e){
+  app.next_calculator(e)
+},
 })

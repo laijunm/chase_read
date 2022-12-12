@@ -1,2 +1,59 @@
-<!--pages/user/user.wxml-->
-<text>用户</text>
+<view class="my-user {{nigheMode == true ? 'my-user-night' : ''}}">
+  <view class="user-data {{nigheMode == true ? 'user-data-night' : ''}}">
+    <view class="user-head-img">
+      <image class="user-head-image" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/userface.png?sign=a07f44d29a2010d7fbba5d56d4ab5a9b&t=1668677880"></image>
+    </view>
+    <view class="name-and-signature" bindtap="routerEditPage">
+      <view class="box">
+        <view class="user-name">{{ isNotLogin == true ? userData.name : '路人13572'}}</view>
+        <view class="user-personalized-signature">{{isNotLogin == true ? userData.sign : '你还没有任何签名呢'}}</view>
+      </view>
+      <van-icon name="arrow" size="14px" color="#fff" />
+    </view>
+
+  </view>
+  <view class="user-main-content {{nigheMode == true ? 'user-main-content-night' : ''}}">
+    <view class="user-item-operate user-special {{nigheMode == true ? 'user-main-content-night' : ''}}" bindtap="routerHistoryPage">
+      <view>
+        <van-icon class="van-icon" name="underway-o" color="#ccc" size="20px" />
+        最近阅读
+      </view>
+      <van-icon name="arrow" size="14px" color="#ddd" />
+    </view>
+    <view class="user-item-operate {{nigheMode == true ? 'user-main-content-night' : ''}}" bindtap="toggleMode">
+      <view>
+        <van-icon class="van-icon" name="browsing-history-o" color="#ccc" size="20px" wx:if="{{nigheMode == true}}" />
+        <van-icon class="van-icon" name="eye-o" color="#ccc" size="20px" wx:if="{{nigheMode == false}}" />
+        夜间模式
+      </view>
+      <image class="night-mode-icon" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/user-btn2.png?sign=c29fcb37e05e4529a5e1b6d279a07032&t=1668677192" wx:if="{{nigheMode == true}}"></image>
+      <image class="night-mode-icon" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/user-btn1.png?sign=e8d597d38a1636f783ee7379e20f0ba9&t=1668677227" wx:if="{{nigheMode == false}}"></image>
+    </view>
+    <view class="user-item-operate {{nigheMode == true ? 'user-main-content-night' : ''}}" bindtap="removeLoginNum">
+      <view>
+        <van-icon class="van-icon" name="failure" color="#ccc" size="20px" />注销账号
+      </view>
+      <van-icon name="arrow" size="14px" color="#ddd" />
+    </view>
+    <view class="user-item-operate {{nigheMode == true ? 'user-main-content-night' : ''}}" bindtap="routerPrivacyPolicyPage">
+      <view>
+        <van-icon class="van-icon" name="records" color="#ccc" size="20px" />隐私政策
+      </view>
+      <van-icon name="arrow" size="14px" color="#ddd" />
+    </view>
+    <view class="user-item-operate {{nigheMode == true ? 'user-main-content-night' : ''}}" bindtap="routerUserAgreementPage">
+      <view>
+        <van-icon class="van-icon" name="contact" color="#ccc" size="20px" />关于我们
+      </view>
+      <van-icon name="arrow" size="14px" color="#ddd" />
+    </view>
+
+  </view>
+  <view class="view-login-box {{nigheMode == true ? 'user-main-content-night' : ''}}">
+    <view class="login " bindtap="routerLoginPage" wx:if="{{isNoLogin == true}}" bindtap="quitLogin">退出登录</view>
+    <view class="login " bindtap="routerLoginPage" wx:if="{{isNoLogin == false}}" bindtap="routerLoginPage">登录</view>
+  </view>
+
+  <van-toast id="van-toast" />
+  <van-dialog id="van-dialog" />
+</view>

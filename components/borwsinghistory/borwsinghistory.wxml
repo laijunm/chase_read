@@ -1,0 +1,14 @@
+<view class="borwsing-history">
+  <view class="book">
+    <view class="book-box-two" wx:for="{{historyList}}" wx:key="index" data-id="{{item.id}}"  data-img="{{item.img}}"  bindtap="clickUseFunction">
+      <image class="book-history-img" src="{{ item.img}}"></image>
+      <view class="book-content">
+        <view class="book-title">{{item.name}}</view>
+        <view class="book-name-and-type">{{item.author}} </view>
+        <view class="book-history-introduce">{{item.introduce}}</view>
+        <view class="time">{{item.collectionTime}}</view>
+      </view>
+    </view>
+
+  </view>
+</view>

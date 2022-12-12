@@ -1,0 +1,23 @@
+<view class="srack-room">
+  <view class="up">
+    <view class="books-type">
+      <view class="books-type-item {{typeActive == index ? 'type-active' : ''}}" wx:for="{{classifyList}}" wx:key="index" data-index="{{index}}" data-url="{{item.cateId}}" catchtap="clickToggleType">{{item.cateName}}</view>
+    </view>
+  
+  </view>
+  <view class="down">
+    <view class="down-item" wx:for="{{classifyItemList}}" wx:key="index" data-id="{{item.id}}" data-img="{{item.cover}}" catchtap="clickUseFunction">
+      <image class="down-item-book-img" src="{{item.cover}}"></image>
+      <view class="down-item-content">
+        <view class="down-item-title">{{item.title}}</view>
+        <view class="down-item-introduce">{{item.content}}</view>
+        <view class="money-type-author">
+          <view class="down-item-author-type">{{item.author}} | {{item.category}}</view>
+          <view class="down-item-money">￥{{item.wprice}}</view>
+        </view>
+      </view>
+    </view>
+ 
+  </view>
+</view>
+

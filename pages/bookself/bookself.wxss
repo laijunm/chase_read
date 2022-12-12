@@ -1,5 +1,12 @@
-/* .bookself{
-} */
+.bookself{
+  background-color: rgba(0, 0, 0, .8);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.bookself-icon{
+  color: #000;
+}
 .head-bar {
   text-align: center;
   position: sticky;
@@ -10,6 +17,8 @@
   padding: 0px 10px 10px;
   border-bottom: 1px solid #ddd;
   background-color: #fff;
+  height: 18px;
+  z-index: 10;
 }
 
 .title {
@@ -19,33 +28,44 @@
 
 .right-icon {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 0;
+  display: flex;
+  justify-content: right;
+  z-index: 100;
 }
 
-.icon {
-  width: 14px;
-  height: 14px;
-  margin-left: 10px;
+.delete-icon{
+  margin-right: 10px;
 }
+
+.bookself-empty{
+width: 100vw;
+}
+
+.van-bookself{
+margin-top: 40%;
+}
+
 
 .boolself-main {
   padding: 10px;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .book {
   width:25%;
   text-align: center;
-  margin: 0px 10px 20px;
+  margin: 0px 12px 20px;
+  position: relative;
 }
 
 .book-img {
   width: 100%;
   height: 100px;
   border-radius: 6px;
+  box-shadow: 1px 2px 6px #999;
 }
 
 
@@ -53,3 +73,14 @@
   font-size: 13px;
 
 }
+
+.delete{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  border-radius: 999px;
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+}
+

@@ -1,0 +1,51 @@
+<view class="login">
+  <view class="login-head-img">
+    <image class="login-head-image" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/userface.png?sign=a07f44d29a2010d7fbba5d56d4ab5a9b&t=1668677880"></image>
+  </view>
+
+  <view class="form-handel">
+    <form bindsubmit="formSubmit">
+      <view class="login-input-box">
+        <view class="input">
+          <input type="number" name="number" placeholder="请输入手机号" />
+        </view>
+        <view class="input">
+          <view class="input-get" wx:if="{{toggleLogin == false}}">
+            <input type="number" name="verification" value="{{inputContent}}" placeholder="请输入短信验证码" />
+            <view class="get-verification {{changeColour == true ? 'get-verification-color' : ''}}" bindtap="getReplaceVerification">{{replaceContent}}</view>
+          </view>
+          <input type="password" name="password" placeholder="请输入密码" wx:if="{{toggleLogin == true}}" />
+        </view>
+
+      </view>
+      <view class="accomplish">
+        <button form-type="submit">完成</button>
+        <view class="password-login" wx:if="{{toggleLogin == false}}" bindtap="toggleLoginHandel">密码登陆</view>
+        <view class="password-login" wx:if="{{toggleLogin == true}}" bindtap="toggleLoginHandel">验证码登录</view>
+      </view>
+
+
+
+
+      <view class="other-login">
+        <van-divider contentPosition="center" fontSize="10">请选择登录方式</van-divider>
+        <view class="login-platform-icon">
+          <image class="platform-icon" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/qq_grey_icon.png?sign=224322b69df4ab9f7259f0ccc123357d&t=1668683140"></image>
+          <image class="platform-icon" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/weixin_grey_icon.png?sign=e35ff072d3d5e0f053f23b6f20fa5256&t=1668683165"></image>
+          <image class="platform-icon" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/weibo_grey_icon.png?sign=20e93a846ab785270e2cedfa31e4b04a&t=1668683212"></image>
+        </view>
+        <view class="read-protocol-policy">
+
+          <view>
+            <view class="radio" wx:if="{{radioValue == false}}" bindtap="toggleRadio"></view>
+            <image class="radio-img" wx:if="{{radioValue == true}}" bindtap="toggleRadio" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/system_select.png?sign=9f751fb7bdc8cc02819aa4f413fa3a84&t=1668684739"></image>
+          </view> 已阅读并同意 <view class="protocol-policy">隐私政策</view> 和 <view class="protocol-policy">用户协议</view>
+
+        </view>
+      </view>
+    </form>
+  </view>
+
+  <van-toast id="van-toast" />
+  <van-dialog id="van-dialog" />
+</view>

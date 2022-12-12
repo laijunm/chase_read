@@ -1,0 +1,16 @@
+var filter = {
+  numTransform:function(n) {
+
+    if (Math.abs(n) >= 100000000) {
+      n = Number(Math.floor(n / 100000000)) 
+    } else if (Math.abs(n) >= 10000) {
+      n = Number(Math.floor(n / 10000))  
+
+    }
+    return n < 10 ? n + "亿" : n + "万" 
+}
+}
+
+module.exports = {
+  numTransform:filter.numTransform
+}

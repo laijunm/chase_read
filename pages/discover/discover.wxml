@@ -1,2 +1,35 @@
-<!--pages/discover/discover.wxml-->
-<text>发现</text>
+<view class="discover">
+
+  <form bindsubmit="discoverFromHandel">
+    <view class="discover-form">
+      <image class="discover-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/search_img_p.png?sign=5ebdb195c560f9c5537d86ad966d04e2&t=1669376277"></image>
+      <input class="discover-input" name="bookName" type="text" placeholder="请输入书名" />
+      <button class="discover-button" form-type="submit">搜索</button>
+    </view>
+  </form>
+
+  <view class="discover-books-list">
+    <view wx:if="{{showHidden == false}}">
+      <view class="seach-recommend-title">小说推荐</view>
+      <view class="seach-recommend">
+        <view class="seach-seach-recommend-item" wx:for="{{seachHistoryArray}}" wx:key="index" data-text="{{item.title}}" catchtap="recommendItemClick">{{item.title}}</view>
+      </view>
+    </view>
+    <view wx:if="{{showHidden == true}}">
+      <view class="seach-result">{{seachText ? '“' + seachText + '”' : ''}} 搜索结果</view>
+      <view class="seach-books-list" wx:for="{{books}}" wx:key="index" data-id="{{item.bookId}}" data-img="{{item.cover}}" bindtap="clickUseFunction">
+        <image class="seach-book-img" src="{{item.cover}}"></image>
+        <view class="seach-book-content">
+          <view class="seach-book-title">{{item.title}}</view>
+          <view class="seach-author-type">
+            <view class="seach-book-name">{{item.author}} 著</view>
+            <view class="seach-book-type">{{item.category}}</view>
+          </view>
+          <view class="seach-book-introduce">{{item.summary}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

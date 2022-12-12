@@ -1,8 +1,15 @@
-// pages/index/index.js
+import recommend from "../../data/recommend"
 Page({
-
   data: {
-    active: 1,
+    active: 0,
+    titleActive:0,
+    wanBen:[],
+    list:recommend.list
   },
- 
+
+  onLoad:function(){
+
+
+  }
+
 })

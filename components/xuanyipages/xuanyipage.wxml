@@ -1,0 +1,224 @@
+<view class="xuanhuan">
+  <view class="swiper">
+    <image class="swiper-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/type_lingyi.png?sign=ca8fc43780869904f250757ad8b55604&t=1668997106"></image>
+  </view>
+  <!-- 内容 -->
+  <view class="book-city-classify-main">
+    <view class="classify-and-recommend">
+      <view class="book-city-classify">
+        <view class="classify-item">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_classify.png?sign=8188da42cdff0d69183d92896b63b17b&t=1668430511"></image>
+        </view>
+        <view class="classify-item">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_rank.png?sign=cbfb2f11a7118e46187eb96611a592d1&t=1668430448"></image>
+        </view>
+        <view class="classify-item">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_free.png?sign=68f1d566bea25fc2ad2b78b1d9b51b11&t=1668430477"></image>
+        </view>
+        <view class="classify-item">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_end.png?sign=205d31fb471f8fd8857388c25471a531&t=1668430493"></image>
+        </view>
+        <view class="classify-item">
+          <image class="classify-item-img" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/icon_new.png?sign=79ff4574665bf7db796bfb3dfe98d8a8&t=1668430430"></image>
+        </view>
+      </view>
+      <!-- 本期主打 -->
+      <view class="leading-recommend">
+        <view class="recommend-title">本期主打</view>
+        <view class="main-issue">
+          <view class="main-issue-up"  data-id="{{cityList[2].id}}" data-img="{{cityList[2].cover}}"  bindtap="clickUseFunction">
+            <image class="main-issue-up-img" src="{{cityList[2].cover}}"></image>
+            <view class="book-content">
+              <view class="book-name">{{cityList[2].title}}</view>
+              <view class="book-introduce">{{cityList[2].content}}</view>
+              <view class="author-and-popularity">
+                <view class="author">{{cityList[2].author}} | {{cityList[2].category}}</view>
+                <view class="popularity">￥ {{cityList[2].wprice}}</view>
+              </view>
+            </view>
+          </view>
+          <view class="main-issue-down">
+            <view class="sell-well-book"  data-id="{{cityList[4].id}}" data-img="{{cityList[4].cover}}"  bindtap="clickUseFunction">
+              <image class="sell-well-book-img" src="{{cityList[4].cover}}"></image>
+              <view class="book-name-center">{{cityList[4].title}}</view>
+              <view class="book-author">{{cityList[4].author}}</view>
+            </view>
+            <view class="sell-well-book"  data-id="{{cityList[7].id}}" data-img="{{cityList[7].cover}}"  bindtap="clickUseFunction">
+              <image class="sell-well-book-img" src="{{cityList[7].cover}}"></image>
+              <view class="book-name-center">{{cityList[7].title}}</view>
+              <view class="book-author">{{cityList[7].author}}</view>
+            </view>
+            <view class="sell-well-book"  data-id="{{cityList[8].id}}" data-img="{{cityList[8].cover}}"  bindtap="clickUseFunction">
+              <image class="sell-well-book-img" src="{{cityList[8].cover}}"></image>
+              <view class="book-name-center">{{cityList[8].title}}</view>
+              <view class="book-author">{{cityList[8].author}}</view>
+            </view>
+        
+          
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 重磅推荐 -->
+    <view class="city-shuangwen">
+      <view class="recommend-title">重磅推荐</view>
+      <view class="city-shuangwen-item"  data-id="{{cityList[2].id}}" data-img="{{cityList[2].cover}}"  bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[2].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[2].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[2].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[2].author}} | {{cityList[2].category}}</view>
+            <view class="popularity">￥ {{cityList[2].wprice}}</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="city-shuangwen-item"  data-id="{{cityList[7].id}}" data-img="{{cityList[7].cover}}"  bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[7].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[7].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[7].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[7].author}} | {{cityList[7].category}}</view>
+            <view class="popularity">￥ {{cityList[7].wprice}}</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="city-shuangwen-item"  data-id="{{cityList[14].id}}" data-img="{{cityList[14].cover}}"  bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[14].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[14].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[14].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[14].author}} | {{cityList[14].category}}</view>
+            <view class="popularity">￥{{cityList[14].wprice}}</view>
+          </view>
+        </view>
+
+      </view>
+   
+    
+    </view>
+    <!-- 人气好文 -->
+    <view class="city-shuangwen">
+      <view class="recommend-title">人气好文</view>
+      <view class="city-shuangwen-item"  data-id="{{cityList[2].id}}" data-img="{{cityList[2].cover}}"  bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[2].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[2].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[2].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[2].author}} | {{cityList[0].category}}</view>
+            <view class="popularity">￥ {{cityList[2].wprice}}</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="city-shuangwen-item"  data-id="{{cityList[23].id}}" data-img="{{cityList[23].cover}}" bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[23].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[23].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[23].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[23].author}} | {{cityList[23].category}}</view>
+            <view class="popularity">{{cityList[23].wprice}}</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="city-shuangwen-item"  data-id="{{cityList[22].id}}" data-img="{{cityList[22].cover}}" bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[22].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[22].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[22].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[22].author}} | {{cityList[22].category}}</view>
+            <view class="popularity">￥ {{cityList[22].wprice}}</view>
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <!-- 完本精品 -->
+    <view class="suspense-adventure">
+      <view class="recommend-title">完本精品</view>
+      <view class="wanben-boutique-box">
+        <view class="sell-well-book"  data-id="{{cityList[7].id}}" data-img="{{cityList[7].cover}}" bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{cityList[7].cover}}"></image>
+          <view class="book-name-center">{{ cityList[7].title}}</view>
+          <view class="book-author">{{ cityList[7].author}}</view>
+        </view>
+        <view class="sell-well-book"  data-id="{{cityList[1].id}}" data-img="{{cityList[1].cover}}" bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{cityList[1].cover}}"></image>
+          <view class="book-name-center">{{ cityList[1].title}}</view>
+          <view class="book-author">{{ cityList[1].author}}</view>
+        </view>
+        <view class="sell-well-book"  data-id="{{cityList[2].id}}" data-img="{{cityList[2].cover}}" bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{cityList[2].cover}}"></image>
+          <view class="book-name-center">{{ cityList[2].title}}</view>
+          <view class="book-author">{{ cityList[2].author}}</view>
+        </view>
+        <view class="sell-well-book"  data-id="{{cityList[3].id}}" data-img="{{cityList[3].cover}}" bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{cityList[3].cover}}"></image>
+          <view class="book-name-center">{{ cityList[3].title}}</view>
+          <view class="book-author">{{ cityList[3].author}}</view>
+        </view>
+        <view class="sell-well-book"  data-id="{{cityList[4].id}}" data-img="{{cityList[4].cover}}" bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{cityList[4].cover}}"></image>
+          <view class="book-name-center">{{ cityList[4].title}}</view>
+          <view class="book-author">{{ cityList[4].author}}</view>
+        </view>
+        <view class="sell-well-book"  data-id="{{cityList[8].id}}" data-img="{{cityList[8].cover}}" bindtap="clickUseFunction">
+          <image class="sell-well-book-img" src="{{cityList[8].cover}}"></image>
+          <view class="book-name-center">{{ cityList[8].title}}</view>
+          <view class="book-author">{{ cityList[8].author}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 免费畅读 -->
+    <view class="new-book-express">
+      <view class="recommend-title">免费畅读
+      </view>
+      <view class="city-shuangwen-item"  data-id="{{cityList[23].id}}" data-img="{{cityList[23].cover}}" bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[23].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[23].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[23].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[23].author}} | {{cityList[23].category}}</view>
+            <view class="popularity">￥ {{cityList[23].wprice}}</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="city-shuangwen-item"  data-id="{{cityList[14].id}}" data-img="{{cityList[14].cover}}" bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[14].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[14].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[14].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[14].author}} | {{cityList[0].category}}</view>
+            <view class="popularity">￥ {{cityList[14].wprice}}</view>
+          </view>
+        </view>
+
+      </view>
+      <view class="city-shuangwen-item"  data-id="{{cityList[8].id}}" data-img="{{cityList[8].cover}}" bindtap="clickUseFunction">
+        <image class="city-shuangwen-item-img" src="{{cityList[8].cover}}"></image>
+        <view class="city-shuangwen-item-text">
+          <view class="city-shuangwen-item-title">{{cityList[8].title}}</view>
+          <view class="city-shuangwen-item-introduce">{{cityList[8].content}}</view>
+          <view class="author-and-popularity">
+            <view class="author">{{cityList[8].author}} | {{cityList[8].category}}</view>
+            <view class="popularity">￥ {{cityList[8].wprice}}</view>
+          </view>
+        </view>
+
+      </view>
+     
+    </view>
+ 
+  </view>
+</view> 

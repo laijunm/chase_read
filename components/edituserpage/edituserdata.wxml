@@ -1,0 +1,45 @@
+<view class="edit-user-data">
+  <view class="user-head-img">
+    <view class="user-title">头像</view>
+    <view class="user-content">
+      <image class="user-head-image" src="https://636c-cloud1-1gy2ulat2b57afcb-1314980084.tcb.qcloud.la/images/userface.png?sign=a07f44d29a2010d7fbba5d56d4ab5a9b&t=1668677880"></image>
+      <van-icon name="arrow" size="14px" color="#ddd" />
+
+    </view>
+  </view>
+  <view class="user-main-content">
+    <view class="user-title">我的ID</view>
+    <view class="user-title">12365478
+      <van-icon class="van-icon-user" name="arrow" size="12px" color="transparent" />
+    </view>
+  </view>
+ 
+  <form bindsubmit="userFormSubmit">
+    <view class="user-main-content">
+      <view class="user-title">昵称</view>
+      <view class="input-arrow"> <input class="user-input-number" name="nicheng" placeholder=" {{userOriginData.name || '路人13572'}}" />
+        <van-icon class="van-icon-user" name="arrow" size="12px" color="#ddd" />
+      </view>
+    </view>
+    <view class="user-main-content">
+      <view class="user-title">性别</view>
+      <view class="user-title">男
+        <van-icon class="van-icon-user" name="arrow" size="12px" color="#ddd" />
+      </view>
+    </view>
+    <view class="user-main-content">
+      <view class="user-title">绑定手机号</view>
+      <view class="input-arrow"> <input name="mobNum" class="user-input-number" type="number" placeholder="{{userLoginNumber.num}}"> </input>
+        <van-icon class="van-icon-user" name="arrow" size="12px" color="#ddd" />
+      </view>
+    </view>
+    <view class="user-main-content">
+      <view class="user-title uset-title-input">签名<input name="sign" class="user-input" placeholder=" {{userOriginData.sign || '请输入你的个性签名'}}"></input></view>
+      <van-icon class="van-icon-user" name="arrow" size="12px" color="#ddd" />
+    </view>
+    <view class="view-btn">
+     <button  class="user-btn" form-type="submit">保存</button>
+    </view>
+  </form>
+  <van-toast id="van-toast" />
+</view>

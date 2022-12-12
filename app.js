@@ -15,5 +15,17 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  next_calculator:function (e) {
+     
+    let id = e.currentTarget.dataset.id
+    let img =  e.currentTarget.dataset.img
+
+    wx.navigateTo({
+      url: '/components/bookpage/bookpage?id=' + id,
+    })
+
+    wx.setStorageSync('bookImg', img)
+    
   }
 })

@@ -1,0 +1,17 @@
+<import src="../../pages/wxParse/wxParse" />
+<view class="chapters-content" catchtap="showPopup">
+  <view wx:if="{{contentEmpty == true}}">内容跑路了......</view>
+  <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+
+  <van-popup show="{{ show }}" position="bottom" custom-style="height:10% ;background-color: rgba(0, 0, 0, .3);" overlay="{{false}}">
+    <view class="book-menu-up">
+      <view class="up-one-chapters" catchtap="getChaptersIndex">上一章</view>
+      <view class="catalogue" catchtap="showLeftPopop">目录</view>
+      <view class="down-one-chapters" catchtap="getChaptersXiaIndex">下一章</view>
+    </view>
+  </van-popup>
+  <van-popup show="{{ showLeft }}" position="left" custom-style="width: 70%; height:100%; background-color:rgba(250, 249, 222,1);" overlay="{{false}}">
+  <view class="book-catalogue-chapters {{ currentHight == index ? 'hight-current' : ''}}" wx:for="{{showPageData}}" wx:key="index" data-id="{{item.uuid}}" catchtap="getChaptersNewData">{{item.title}}</view>
+  </van-popup>
+  <van-toast id="van-toast" />
+</view>

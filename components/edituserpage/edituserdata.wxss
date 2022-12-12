@@ -1,0 +1,79 @@
+.edit-user-data{
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.user-head-img{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.user-content{
+  display: flex;
+  align-items: center;
+}
+
+.user-title{
+  font-size: 12px;
+}
+
+.user-head-image{
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  display: block;
+  margin-right: 10px;
+
+}
+
+.user-main-content{
+  background-color: #fff;
+  padding: 10px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+
+.van-icon-user{
+  margin-left: 10px;
+}
+.user-input-number{
+  font-size: 12px;
+  width: 80px;
+  text-align: right;
+}
+.input-arrow{
+  display: flex;
+  align-items: center;
+}
+
+.user-input{
+  margin-left:10px ;
+  font-size: 12px;
+  width: 240px;
+}
+
+.uset-title-input{
+  display: flex;
+  align-items: center;
+
+}
+
+.user-btn{
+margin: 50px auto 0px;
+background-color: #fff;
+text-align: center;
+border-radius: 8px;
+width: 200px;
+box-shadow: 1px 2px 6px #ddd;
+}
